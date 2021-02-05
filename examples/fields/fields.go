@@ -15,7 +15,7 @@ type S struct {
 // end::struct[]
 
 // tag::padding[]
-type S struct {
+type S2 struct {
 	a bool
 	_ [7]byte // padding <1>
 	b float64
@@ -28,6 +28,8 @@ type S struct {
 func main() {
 	// tag::sizeof[]
 	var s S
-	fmt.Println(unsafe.Sizeof(s)) // <1>
+	var s2 S
+	fmt.Println(unsafe.Sizeof(s))  // <1>
+	fmt.Println(unsafe.Sizeof(s2)) // <2>
 	// end::sizeof[]
 }

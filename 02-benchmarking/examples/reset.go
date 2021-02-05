@@ -24,3 +24,11 @@ func BenchmarkComplicated(b *testing.B) {
 }
 
 // END2 OMIT
+
+func boringAndExpensiveSetup() {
+
+}
+
+func complicatedSetup() {
+
+}
